@@ -49,7 +49,6 @@ def junit5_scanning_test(name, srcs=[], deps=[], runtime_deps=[], size="small"):
     runtime_deps = all_runtime_deps,
   )
 
-
 def junit5_test(name, deps=[], size="small"):
   junit5_scanning_test(
     name = name,
