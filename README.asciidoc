@@ -41,7 +41,7 @@ load("@bazel_build_process//java:junit5_test.bzl", "junit5_test", "junit5_alltes
 
 # runs a single test
 junit5_test(
-  name = "de/xn__ho_hia/yosql/model/LoggingAPITest",
+  name = "path/to/your/Test",
   deps = [":your-lib", "//external:some_lib"],
 )
 
@@ -53,3 +53,5 @@ junit5_alltests(
 ----
 
 You don't have to add JUnit dependencies yourself. `//external:some_lib` should be something like link:http://mockito.org/[Mockito] or anything else besides JUnit that you need in your tests.
+
+The path-to-your-test in the first example is supposed to reference an actual .java file containing the test class to run, however it does not require to specify the .java ending.
