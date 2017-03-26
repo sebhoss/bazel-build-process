@@ -1,0 +1,55 @@
+= bazel-build-process
+
+Bazel related resources that help setting up a Bazel based build process.
+
+== Usage
+
+=== Managed Dependencies
+
+In order to use external dependencies whose versions are managed at a central place (here), use this:
+
+[source]
+----
+git_repository(
+    name = "bazel_build_process",
+    remote = "https://github.com/sebhoss/bazel-build-process.git",
+    tag = "v1.0.0",
+)
+
+load("@bazel_build_process//dependencies:sebhoss.bzl", "sebhoss_dependencies")
+load("@bazel_build_process//dependencies:square.bzl", "square_dependencies")
+load("@bazel_build_process//dependencies:logging.bzl", "logging_dependencies")
+
+sebhoss_dependencies()
+square_dependencies()
+logging_dependencies()
+----
+
+=== JUnit5 Tests
+
+In order to run JUnit5 based tests, use this:
+
+[source]
+----
+git_repository(
+    name = "bazel_build_process",
+    remote = "https://github.com/sebhoss/bazel-build-process.git",
+    tag = "v1.0.0",
+)
+
+load("@bazel_build_process//java:junit5_test.bzl", "junit5_test", "junit5_alltests")
+
+# runs a single test
+junit5_test(
+  name = "de/xn__ho_hia/yosql/model/LoggingAPITest",
+  deps = [":your-lib", "//external:some_lib"],
+)
+
+# runs all tests on classpath
+junit5_alltests(
+  name = "AllTests",
+  runtime_deps = [":your-lib", "//external:some_lib"],
+)
+----
+
+You don't have to add JUnit dependencies yourself. `//external:some_lib` should be something like link:http://mockito.org/[Mockito] or anything else besides JUnit that you need in your tests.
