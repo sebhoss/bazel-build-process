@@ -54,7 +54,7 @@ def junit5_test(name, deps=[], size="small"):
     name = name,
     deps = deps,
     size = size,
-    srcs = ["javatest/%s.java" % name]
+    srcs = ["src/test/java/%s.java" % name]
   )
 
 def junit5_alltests(name, runtime_deps=[], size="small"):
