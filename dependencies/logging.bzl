@@ -25,3 +25,27 @@ def logging_dependencies():
     name = "slf4j_api",
     actual = "@org_slf4j_slf4j_api//jar",
   )
+  maven_jar(
+    name = "org_slf4j_slf4j_ext",
+    artifact = "org.slf4j:slf4j-ext:1.7.21",
+  )
+  native.bind(
+    name = "slf4j_ext",
+    actual = "@org_slf4j_slf4j_ext//jar",
+  )
+  maven_jar(
+    name = "ch_qos_logback_logback_classic",
+    artifact = "ch.qos.logback:logback-classic:1.2.2",
+  )
+  native.bind(
+    name = "logback_classic",
+    actual = "@ch_qos_logback_logback_classic//jar",
+  )
+  maven_jar(
+    name = "ch_qos_logback_logback_core",
+    artifact = "ch.qos.logback:logback-core:1.2.2",
+  )
+  native.bind(
+    name = "logback_core",
+    actual = "@ch_qos_logback_logback_core//jar",
+  )
