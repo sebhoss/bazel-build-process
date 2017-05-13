@@ -76,7 +76,7 @@ def junit5_test_in_package(name, package, size="small", deps=[]):
     ],
   )
 
-def junit5(file, size="small", deps=[]):
+def junit5(file, size="small", deps=[], data=[]):
   all_deps = [
       "//external:junit5_jupiter_api",
   ]
@@ -91,9 +91,10 @@ def junit5(file, size="small", deps=[]):
       "--select-class %s" % file[14:-5].replace("/", "."),
     ],
     srcs = [
-      "%s" % file
+      "%s" % file,
     ],
     deps = all_deps,
+    data = data,
     runtime_deps = [
       "//external:junit5_jupiter_engine",
       "//external:junit5_platform_console",
