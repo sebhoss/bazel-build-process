@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "https://git-scm.com/docs/git-config#git-config-corehooksPath"
