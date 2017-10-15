@@ -6,4 +6,3 @@ def javapoet_dependencies():
 
 def square_dependencies():
   javapoet_dependencies()
-  
