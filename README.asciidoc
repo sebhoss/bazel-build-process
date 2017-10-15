@@ -43,6 +43,22 @@ The following dependencies are managed in this repository and kept up-to-date:
 |===
 |Group |Symbol|Meaning
 
+|cache
+|cache_dependencies
+|All dependencies related to caching
+
+|cache
+|caffeine_dependencies
+a|Caffeine dependencies
+
+* `com.github.ben-manes.caffeine:caffeine`
+
+|cache
+|ehcache_dependencies
+a|EhCache dependencies
+
+* `org.ehcache:ehcache`
+
 |junit
 |junit_dependencies
 |All JUnit 5 dependencies
