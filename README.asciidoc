@@ -127,6 +127,16 @@ a|SnakeYAML dependencies
 
 * `org.yaml:snakeyaml`
 
+|xml
+|xml_dependencies
+|All XML related dependencies
+
+|xml
+|xstream_dependencies
+a|XStream dependencies
+
+* `com.thoughtworks.xstream:xstream`
+
 |sebhoss
 |sebhoss_dependencies
 |All dependencies from seb.xn--ho-hia.de
