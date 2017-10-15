@@ -59,6 +59,24 @@ a|EhCache dependencies
 
 * `org.ehcache:ehcache`
 
+e|json
+e|json_dependencies
+e|All JSON related dependencies
+
+|json
+|jackson_dependencies
+a|Jackson dependencies
+
+* `com.fasterxml.jackson.core:jackson-core`
+* `com.fasterxml.jackson.core:jackson-annotations`
+* `com.fasterxml.jackson.core:jackson-databind`
+
+|json
+|gson_dependencies
+a|GSON dependencies
+
+* `com.google.code.gson:gson`
+
 e|junit
 e|junit_dependencies
 e|All JUnit 5 dependencies
