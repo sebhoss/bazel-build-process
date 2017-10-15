@@ -37,9 +37,9 @@ load("@bazel_build_process//dependencies:junit.bzl", "junit_dependencies")
 junit_dependencies()
 ----
 
-The following dependencies are managed in this repository:
+The following dependencies are managed in this repository and kept up-to-date:
 
-.Table Managed Dependencies
+.Managed Dependencies
 |===
 |Group |Symbol|Meaning
 
@@ -49,19 +49,38 @@ The following dependencies are managed in this repository:
 
 |junit
 |junit_platform_dependencies
-|JUnit 5 Platform dependencies
+a|JUnit 5 Platform dependencies
+
+* `org.junit.platform:junit-platform-commons`
+* `org.junit.platform:junit-platform-engine`
+* `org.junit.platform:junit-platform-launcher`
+* `org.junit.platform:junit-platform-runner`
+* `org.junit.platform:junit-platform-console`
+* `org.junit.platform:junit-platform-console-standalone`
+* `org.junit.platform:junit-platform-suite-api`
+* `org.junit.platform:junit-platform-surefire-provider`
+* `org.junit.platform:junit-platform-gradle-plugin`
 
 |junit
 |junit_jupiter_dependencies
-|JUnit 5 Jupiter dependencies
+a|JUnit 5 Jupiter dependencies
+
+* `org.junit.jupiter:junit-jupiter-api`
+* `org.junit.jupiter:junit-jupiter-engine`
+* `org.junit.jupiter:junit-jupiter-params`
+* `org.junit.jupiter:junit-jupiter-migrationsupport`
 
 |junit
 |junit_vintage_dependencies
-|JUnit 5 Vintage dependencies
+a|JUnit 5 Vintage dependencies
+
+* `org.junit.vintage:junit-vintage-engine`
 
 |junit
 |junit_optional_dependencies
-|Optional JUnit 5 dependencies
+a|Optional JUnit 5 dependencies
+
+* `org.apiguardian:apiguardian-api`
 
 |logging
 |logging_dependencies
@@ -69,15 +88,24 @@ The following dependencies are managed in this repository:
 
 |logging
 |slf4j_dependencies
-|Slf4j dependencies
+a|Slf4j dependencies
+
+* `org.slf4j:slf4j-api`
+* `org.slf4j:slf4j-ext`
 
 |logging
 |logback_dependencies
-|Logback dependencies
+a|Logback dependencies
+
+* `ch.qos.logback:logback-classic`
+* `ch.qos.logback:logback-core`
 
 |logging
 |log4j_dependencies
-|Log4j dependencies
+a|Log4j dependencies
+
+* `org.apache.logging.log4j:log4j-api`
+* `org.apache.logging.log4j:log4j-core`
 
 |square
 |square_dependencies
@@ -87,7 +115,7 @@ The following dependencies are managed in this repository:
 |javapoet_dependencies
 a|JavaPoet dependencies
 
-* `com.squareup:javapoet:1.9.0`
+* `com.squareup:javapoet`
 
 |sebhoss
 |sebhoss_dependencies
@@ -97,7 +125,7 @@ a|JavaPoet dependencies
 |javapoet_type_guesser
 a|JavaPoet-Type-Guesser dependencies:
 
-* `de.xn--ho-hia.javapoet:javapoet-type-guesser:2017.03.19-185842`
+* `de.xn--ho-hia.javapoet:javapoet-type-guesser`
 
 |sebhoss
 |metio_repository
