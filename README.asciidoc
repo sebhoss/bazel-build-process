@@ -85,7 +85,9 @@ The following dependencies are managed in this repository:
 
 |square
 |javapoet_dependencies
-|JavaPoet dependencies
+a|JavaPoet dependencies
+
+* `com.squareup:javapoet:1.9.0`
 
 |sebhoss
 |sebhoss_dependencies
@@ -93,7 +95,9 @@ The following dependencies are managed in this repository:
 
 |sebhoss
 |javapoet_type_guesser
-|JavaPoet-Type-Guesser dependencies
+a|JavaPoet-Type-Guesser dependencies:
+
+* `de.xn--ho-hia.javapoet:javapoet-type-guesser:2017.03.19-185842`
 
 |sebhoss
 |metio_repository
