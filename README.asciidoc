@@ -37,6 +37,70 @@ load("@bazel_build_process//dependencies:junit.bzl", "junit_dependencies")
 junit_dependencies()
 ----
 
+The following dependencies are managed in this repository:
+
+.Table Managed Dependencies
+|===
+|Group |Symbol|Meaning
+
+|junit
+|junit_dependencies
+|All JUnit 5 dependencies
+
+|junit
+|junit_platform_dependencies
+|JUnit 5 Platform dependencies
+
+|junit
+|junit_jupiter_dependencies
+|JUnit 5 Jupiter dependencies
+
+|junit
+|junit_vintage_dependencies
+|JUnit 5 Vintage dependencies
+
+|junit
+|junit_optional_dependencies
+|Optional JUnit 5 dependencies
+
+|logging
+|logging_dependencies
+|All logging dependencies
+
+|logging
+|slf4j_dependencies
+|Slf4j dependencies
+
+|logging
+|logback_dependencies
+|Logback dependencies
+
+|logging
+|log4j_dependencies
+|Log4j dependencies
+
+|square
+|square_dependencies
+|All dependencies from square.com
+
+|square
+|javapoet_dependencies
+|JavaPoet dependencies
+
+|sebhoss
+|sebhoss_dependencies
+|All dependencies from seb.xn--ho-hia.de
+
+|sebhoss
+|javapoet_type_guesser
+|JavaPoet-Type-Guesser dependencies
+
+|sebhoss
+|metio_repository
+|Enables dependency fetching from repository.metio.wtf
+
+|===
+
 === JUnit5 Tests
 
 In order to run JUnit5 based tests, use this:
