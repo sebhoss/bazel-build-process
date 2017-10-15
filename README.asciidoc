@@ -8,6 +8,8 @@ Bazel related resources that help setting up a Bazel based build process.
 
 In order to use external dependencies whose versions are managed at a central place (here), use this:
 
+First declare this repository as a `git_repository` in your `WORKSPACE`.
+
 [source]
 ----
 git_repository(
@@ -15,14 +17,24 @@ git_repository(
     remote = "https://github.com/sebhoss/bazel-build-process.git",
     tag = "v1.0.0",
 )
+----
 
-load("@bazel_build_process//dependencies:sebhoss.bzl", "sebhoss_dependencies")
-load("@bazel_build_process//dependencies:square.bzl", "square_dependencies")
-load("@bazel_build_process//dependencies:logging.bzl", "logging_dependencies")
+Then load the appropriate file like this:
 
-sebhoss_dependencies()
-square_dependencies()
-logging_dependencies()
+[source]
+----
+load("@bazel_build_process//dependencies:DEPENDENCY_GROUP.bzl", "...", "...", ...)
+----
+
+Replace `DEPENDENCY_GROUP` with whatever you wish to depend on. Load as many symbols as you need and use them like this:
+
+[source]
+----
+// import symbol
+load("@bazel_build_process//dependencies:junit.bzl", "junit_dependencies")
+
+// declare dependencies (in this case, all of junit)
+junit_dependencies()
 ----
 
 === JUnit5 Tests
