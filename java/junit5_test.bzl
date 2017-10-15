@@ -1,11 +1,11 @@
 def junit5_classpath_test(name, runtime_deps=[], size="small"):
   all_runtime_deps = [
-    "//external:junit5_jupiter_engine",
-    "//external:junit5_platform_console",
-    "//external:junit5_platform_commons",
-    "//external:junit5_platform_engine",
-    "//external:junit5_platform_launcher",
-    "//external:opentest4j",
+    "@junit5_jupiter_engine//jar",
+    "@junit5_platform_console//jar",
+    "@junit5_platform_commons//jar",
+    "@junit5_platform_engine//jar",
+    "@junit5_platform_launcher//jar",
+    "@opentest4j//jar",
   ]
   for dep in runtime_deps:
     all_runtime_deps.append(dep)
@@ -22,7 +22,7 @@ def junit5_classpath_test(name, runtime_deps=[], size="small"):
 
 def junit5_test(name, size="small", deps=[]):
   all_deps = [
-      "//external:junit5_jupiter_api",
+      "@junit5_jupiter_api//jar",
   ]
   for dep in deps:
     all_deps.append(dep)
@@ -39,18 +39,18 @@ def junit5_test(name, size="small", deps=[]):
     ],
     deps = all_deps,
     runtime_deps = [
-      "//external:junit5_jupiter_engine",
-      "//external:junit5_platform_console",
-      "//external:junit5_platform_commons",
-      "//external:junit5_platform_engine",
-      "//external:junit5_platform_launcher",
-      "//external:opentest4j",
+      "@junit5_jupiter_engine//jar",
+      "@junit5_platform_console//jar",
+      "@junit5_platform_commons//jar",
+      "@junit5_platform_engine//jar",
+      "@junit5_platform_launcher//jar",
+      "@opentest4j//jar",
     ],
   )
 
 def junit5_test_in_package(name, package, size="small", deps=[]):
   all_deps = [
-      "//external:junit5_jupiter_api",
+      "@junit5_jupiter_api//jar",
   ]
   for dep in deps:
     all_deps.append(dep)
@@ -67,18 +67,18 @@ def junit5_test_in_package(name, package, size="small", deps=[]):
     ],
     deps = all_deps,
     runtime_deps = [
-      "//external:junit5_jupiter_engine",
-      "//external:junit5_platform_console",
-      "//external:junit5_platform_commons",
-      "//external:junit5_platform_engine",
-      "//external:junit5_platform_launcher",
-      "//external:opentest4j",
+      "@junit5_jupiter_engine//jar",
+      "@junit5_platform_console//jar",
+      "@junit5_platform_commons//jar",
+      "@junit5_platform_engine//jar",
+      "@junit5_platform_launcher//jar",
+      "@opentest4j//jar",
     ],
   )
 
 def junit5(file, size="small", deps=[], data=[]):
   all_deps = [
-      "//external:junit5_jupiter_api",
+      "@junit5_jupiter_api//jar",
   ]
   for dep in deps:
     all_deps.append(dep)
@@ -96,11 +96,11 @@ def junit5(file, size="small", deps=[], data=[]):
     deps = all_deps,
     data = data,
     runtime_deps = [
-      "//external:junit5_jupiter_engine",
-      "//external:junit5_platform_console",
-      "//external:junit5_platform_commons",
-      "//external:junit5_platform_engine",
-      "//external:junit5_platform_launcher",
-      "//external:opentest4j",
+      "@junit5_jupiter_engine//jar",
+      "@junit5_platform_console//jar",
+      "@junit5_platform_commons//jar",
+      "@junit5_platform_engine//jar",
+      "@junit5_platform_launcher//jar",
+      "@opentest4j//jar",
     ],
   )
