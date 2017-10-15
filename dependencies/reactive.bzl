@@ -1,5 +1,5 @@
 def rxjava_dependencies():
-  maven_jar(
+  native.maven_jar(
     name = "rxjava",
     artifact = "io.reactivex.rxjava2:rxjava:2.1.5",
   )

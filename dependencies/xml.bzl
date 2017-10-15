@@ -1,5 +1,5 @@
 def xstream_dependencies():
-  maven_jar(
+  native.maven_jar(
     name = "xstream",
     artifact = "com.thoughtworks.xstream:xstream:1.4.9",
   )
