@@ -107,6 +107,16 @@ a|Log4j dependencies
 * `org.apache.logging.log4j:log4j-api`
 * `org.apache.logging.log4j:log4j-core`
 
+|reactive
+|reactive_dependencies
+|All dependencies related to reactive programming
+
+|reactive
+|rxjava_dependencies
+a|RxJava dependencies
+
+* `io.reactivex.rxjava2:rxjava`
+
 |square
 |square_dependencies
 |All dependencies from square.com
