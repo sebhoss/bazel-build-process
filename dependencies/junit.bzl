@@ -1,3 +1,5 @@
+load("@bazel_tools//tools/build_defs/repo:maven_rules.bzl", "maven_jar")
+
 def junit_platform_dependencies():
   maven_jar(
     name = "junit_platform_commons",
@@ -66,8 +68,15 @@ def junit_optional_dependencies():
     artifact = "org.apiguardian:apiguardian-api:1.0.0",
   )
 
+def junit_3rd_party_dependencies():
+  maven_jar(
+    name = "opentest4j",
+    artifact = "org.opentest4j:opentest4j:1.0.0",
+  )
+
 def junit_dependencies():
   junit_platform_dependencies()
   junit_jupiter_dependencies()
   junit_vintage_dependencies()
+  junit_3rd_party_dependencies()
   junit_optional_dependencies()

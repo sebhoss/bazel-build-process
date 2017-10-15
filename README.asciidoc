@@ -111,6 +111,12 @@ a|JUnit 5 Vintage dependencies
 * `org.junit.vintage:junit-vintage-engine`
 
 |junit
+|junit_3rd_party_dependencies
+a|Third Party dependencies of JUnit 5
+
+* `org.opentest4j:opentest4j`
+
+|junit
 |junit_optional_dependencies
 a|Optional JUnit 5 dependencies
 

@@ -1,3 +1,5 @@
+load("@bazel_tools//tools/build_defs/repo:maven_rules.bzl", "maven_jar")
+
 def javapoet_type_guesser():
   maven_jar(
     name = "javapoet_type_guesser",
@@ -6,9 +8,3 @@ def javapoet_type_guesser():
 
 def sebhoss_dependencies():
   javapoet_type_guesser()
-
-def metio_repository():
-  maven_server(
-    name = "metio",
-    url = "https://repository.metio.wtf/repository/maven-public/",
-  )

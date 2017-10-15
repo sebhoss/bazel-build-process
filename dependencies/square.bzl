@@ -1,3 +1,5 @@
+load("@bazel_tools//tools/build_defs/repo:maven_rules.bzl", "maven_jar")
+
 def javapoet_dependencies():
   maven_jar(
     name = "javapoet",
