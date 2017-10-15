@@ -117,6 +117,22 @@ a|JavaPoet dependencies
 
 * `com.squareup:javapoet`
 
+|templating
+|templating_dependencies
+|All templating related dependencies
+
+|templating
+|jmustache_dependencies
+a|JMustache dependencies
+
+* `com.samskivert:jmustache`
+
+|templating
+|mustache_java_dependencies
+a|mustache.java dependencies
+
+* `com.github.spullara.mustache.java:compiler`
+
 |yaml
 |yaml_dependencies
 |All YAML related dependencies
