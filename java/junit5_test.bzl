@@ -6,6 +6,7 @@ def junit5_classpath_test(name, runtime_deps=[], size="small"):
     "@junit_platform_engine//jar",
     "@junit_platform_launcher//jar",
     "@opentest4j//jar",
+    "@apiguardian_api//jar",
   ]
   for dep in runtime_deps:
     all_runtime_deps.append(dep)
@@ -23,6 +24,7 @@ def junit5_classpath_test(name, runtime_deps=[], size="small"):
 def junit5_test(name, size="small", deps=[]):
   all_deps = [
       "@junit5_jupiter_api//jar",
+      "@apiguardian_api//jar",
   ]
   for dep in deps:
     all_deps.append(dep)
@@ -51,6 +53,7 @@ def junit5_test(name, size="small", deps=[]):
 def junit5_test_in_package(name, package, size="small", deps=[]):
   all_deps = [
       "@junit_jupiter_api//jar",
+      "@apiguardian_api//jar",
   ]
   for dep in deps:
     all_deps.append(dep)
@@ -79,6 +82,7 @@ def junit5_test_in_package(name, package, size="small", deps=[]):
 def junit5(file, size="small", deps=[], data=[]):
   all_deps = [
       "@junit_jupiter_api//jar",
+      "@apiguardian_api//jar",
   ]
   for dep in deps:
     all_deps.append(dep)
