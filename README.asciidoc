@@ -59,9 +59,9 @@ a|EhCache dependencies
 
 * `org.ehcache:ehcache`
 
-|junit
-|junit_dependencies
-|All JUnit 5 dependencies
+e|junit
+e|junit_dependencies
+e|All JUnit 5 dependencies
 
 |junit
 |junit_platform_dependencies
@@ -98,9 +98,9 @@ a|Optional JUnit 5 dependencies
 
 * `org.apiguardian:apiguardian-api`
 
-|logging
-|logging_dependencies
-|All logging dependencies
+e|logging
+e|logging_dependencies
+e|All logging dependencies
 
 |logging
 |slf4j_dependencies
@@ -123,9 +123,9 @@ a|Log4j dependencies
 * `org.apache.logging.log4j:log4j-api`
 * `org.apache.logging.log4j:log4j-core`
 
-|reactive
-|reactive_dependencies
-|All dependencies related to reactive programming
+e|reactive
+e|reactive_dependencies
+e|All dependencies related to reactive programming
 
 |reactive
 |rxjava_dependencies
@@ -133,9 +133,9 @@ a|RxJava dependencies
 
 * `io.reactivex.rxjava2:rxjava`
 
-|square
-|square_dependencies
-|All dependencies from square.com
+e|square
+e|square_dependencies
+e|All dependencies from square.com
 
 |square
 |javapoet_dependencies
@@ -143,9 +143,9 @@ a|JavaPoet dependencies
 
 * `com.squareup:javapoet`
 
-|templating
-|templating_dependencies
-|All templating related dependencies
+e|templating
+e|templating_dependencies
+e|All templating related dependencies
 
 |templating
 |jmustache_dependencies
@@ -159,9 +159,9 @@ a|mustache.java dependencies
 
 * `com.github.spullara.mustache.java:compiler`
 
-|yaml
-|yaml_dependencies
-|All YAML related dependencies
+e|yaml
+e|yaml_dependencies
+e|All YAML related dependencies
 
 |yaml
 |snakeyaml_dependencies
@@ -169,9 +169,9 @@ a|SnakeYAML dependencies
 
 * `org.yaml:snakeyaml`
 
-|xml
-|xml_dependencies
-|All XML related dependencies
+e|xml
+e|xml_dependencies
+e|All XML related dependencies
 
 |xml
 |xstream_dependencies
@@ -179,9 +179,9 @@ a|XStream dependencies
 
 * `com.thoughtworks.xstream:xstream`
 
-|sebhoss
-|sebhoss_dependencies
-|All dependencies from seb.xn--ho-hia.de
+e|sebhoss
+e|sebhoss_dependencies
+e|All dependencies from seb.xn--ho-hia.de
 
 |sebhoss
 |javapoet_type_guesser
@@ -189,9 +189,9 @@ a|JavaPoet-Type-Guesser dependencies:
 
 * `de.xn--ho-hia.javapoet:javapoet-type-guesser`
 
-|sebhoss
-|metio_repository
-|Enables dependency fetching from repository.metio.wtf
+e|sebhoss
+e|metio_repository
+e|Enables dependency fetching from repository.metio.wtf
 
 |===
 
