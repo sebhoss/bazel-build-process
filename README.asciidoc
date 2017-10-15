@@ -43,9 +43,9 @@ The following dependencies are managed in this repository and kept up-to-date:
 |===
 |Group |Symbol|Meaning
 
-|cache
-|cache_dependencies
-|All dependencies related to caching
+e|cache
+e|cache_dependencies
+e|All dependencies related to caching
 
 |cache
 |caffeine_dependencies
